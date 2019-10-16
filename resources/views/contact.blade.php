@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Pagina_web</title>
+        <title>Pagina_web2</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -83,32 +83,8 @@
                 <div class="title m-b-md">
                     Mis notas
                 </div>
-                <br>
-                {{ $date }} 
-                <br>
-
-                @foreach ($notes as $note)
-                    <h2>
-                        {{$note['title']}}
-                        @if ($note['important'])
-                        *
-                        @endif
-
-                    </h2>
-                    <p>{{$note['body']}}</p>
-                @endforeach
-
-                <br>
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+     
+                
             </div>
         </div>
     </body>

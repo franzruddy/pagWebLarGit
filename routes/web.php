@@ -12,5 +12,25 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    $notes = [
+        [
+        'title'=> 'Rutas Laravel',
+        'body' => 'Las rutas se definen en el archivo routes/web.php',
+        'important' => true 
+        ],
+        [
+        'title'=> 'Rutas Laravel',
+        'body' => 'Las rutas se definen en el archivo routes/web.php',
+        'important' => false
+        ],
+    ];
+
+    $date = date('Y-m-d H:i:s');
+
+    return view('welcome',['date'=> $date],['notes'=>$notes]);
+});
+
+Route::get('/contact', function () {
+    return view('contact');
 });
