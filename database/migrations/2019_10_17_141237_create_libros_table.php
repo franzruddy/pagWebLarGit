@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateNotesTable extends Migration
+class CreateLibrosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,14 @@ class CreateNotesTable extends Migration
      */
     public function up()
     {
-        Schema::create('notes', function (Blueprint $table) {
+        Schema::create('libros', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->String('title');
-            $table->text('body');
-            $table->boolean('important');
+            $table->string('nombre');
+            $table->String('resumen');
+            $table->integer('npagina');
+            $table->integer('edicion');
+            $table->string('autor');
+            $table->decimal('precio',5,2);
             $table->timestamps();
         });
     }
@@ -29,6 +32,6 @@ class CreateNotesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('notes');
+        Schema::dropIfExists('libros');
     }
 }

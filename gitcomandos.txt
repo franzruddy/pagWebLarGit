@@ -1,0 +1,55 @@
+ººº//crear un git 
+//crear repositorio 
+git init
+git status -s
+git add . (o los archivos a guardar)
+git commit -m "comentario del documento mandado o agregamos"
+*******************************************************
+//modificar
+//identificador de las ver los commit 
+git log --oneline 
+//muestra todos los identificadores 
+git reset --hard (y el identificador donde se quiere mandar)
+*****************************************************
+//github
+//se crea en la nube
+git resote add origin https//github.comxxxxxxxx
+git push -w origin master
+***************************************************
+//crear ramas en git
+git branch nombre_de_la_rama
+git checkout nombre_de_la_rama
+git branch
+git add .
+git commit -m "agregamos algo"
+git push
+*************************************************
+//bajar de los archivos locales a la terminal
+git pull
+
+//para con parar archivos 
+git fetch
+
+*************************************************
+//versiones o tags
+ 
+git tag versiones 1.0 -m "descripcion de la version"
+//crear los tags
+git log --oneline
+//para ver el master y la rama 
+git push --tags
+
+***********************************************
+//union de las ramas  
+//mover a la rama master con:
+git checkout master
+git branch
+//ver las ramas a unir
+git merge nombre_de_la_rama
+//para unir las ramas 
+git log --oneline
+//para ver el master y la rama 
+git branch -d nombre_de_la_rama
+//eliminar la rama  
+
+
